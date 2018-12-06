@@ -3,18 +3,21 @@
 @import "base"
 @import "vars"
 
+
 .a
     outline: 1px solid red
 
 .b
     outline: 1px solid green
 
+.c
+    outline: 1px solid blue
+
 header
     position: fixed
     width: 100%
+    transition: /1s
     border-bottom: 1px solid grey
-    background: red
-    // padding: 10px 0 0 0
 
 * ul
     list-style-type: none
@@ -32,9 +35,23 @@ header
 
 
 .header-links-menu-ul
+    display: flex
     li
-        padding: 34px 10px 34px
+        padding: 34px 20px
         cursor: pointer
+        position: relative
+        &:hover
+            &:before
+                content: ''
+                position: absolute
+                top: 45px
+                left: 0
+                background: #17bed2
+                width: 9px
+                height: 2px
+                transition-duration: .3s
+                transition-property: all
+                transition-timing-function: cubic-bezier(.7,1,.7,1)
         a
             text-transform: uppercase
             text-decoration: none
@@ -44,14 +61,59 @@ header
     li:last-child
         padding-right: 0
 
+
 .header-links-menu
     display: none
-    padding: 34px 10px 34px
+    padding: 34px 0 34px 34px
     cursor: pointer
-    text-transform: uppercase
-    text-decoration: none
-    font-size: 13px
-    font-weight: 600
-    color: #fff
-    padding-right: 0
+    a
+        text-transform: uppercase
+        text-decoration: none
+        font-size: 13px
+        font-weight: 600
+        color: #fff
+    // padding-right: 0
+
+.main-section
+    background: url(../img/main/01.jpg) no-repeat
+    background-size: cover
+    height: 100%
+    width: 100%
+    background-position: center
+    // position: absolute
+    h1
+        font-size: 80px
+        font-weight: 700
+        color: #ffffff
+        margin: 0 0 15px 0
+        font-family: Hind, sans-serif
+    p
+        color: #a6a7aa
+    a
+        text-decoration: none
+        font-size: 13px
+        font-weight: 600
+        padding: 15px 30px
+        border: 1px solid rgba(255,255,255,.3)
+        color: white
+        display: inline-block
+        transition: .5s
+        &:hover
+            color: #515769
+            background: #fff
+            border-color: transparent
+            transition: .5s
+
+.black-header
+    transition: /1s
+    background: white
+    .header-img
+        img:first-child
+            display: none
+        img:last-child
+            display: block
+    .header-links-menu-ul
+        li
+            a
+                color: black
 @import "media" // Всегда в конце

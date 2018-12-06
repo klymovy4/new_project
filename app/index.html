@@ -17,6 +17,7 @@
 		body {
 			opacity: 0;
 			overflow-x: hidden;
+			background: #000;
 		}
 
 		html {
@@ -30,14 +31,14 @@
 	<header>
 		<div class="container">
 			<div class="header-container d-flex justify-content-between">
-				<div class="header-img d-flex jistify-content-center align-items-center b">
+				<div class="header-img d-flex justify-content-center align-items-center">
 					<img src="img/logo.png" alt="logo-dark">
 					<img src="img/logo-dark.png" alt="logo-dark">
 				</div>
 
-				<div class="header-links d-flex justify-content-end">
-					<a class='header-links-menu' href="#">menu</a>
-					<ul class='header-links-menu-ul d-flex b'>
+				<div class="header-links">
+					<div class="header-links-menu"><a class='' href="#">menu</a></div>	
+					<ul class='header-links-menu-ul'>
 						<li class='active'><a href="#">Home</a></li>
 						<li><a href="#">Pricing</a></li>
 						<li><a href="#">About</a></li>
@@ -49,146 +50,44 @@
 			</div>
 		</div>
 	</header>
-	<!-- 
-	<section class='section-first'>
+
+	<section class='main-section d-flex align-items-center'>
 		<div class="container">
-			<div class="row asd ">
-				<div class="col-md-8 sc">
-					<div class="section-first-container">
-						<h1>HI-TECH DESIGN</h1>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quibusdam <br>rerum quo harum perspiciatis
-							recusandae.</p>
-						<a href="#">EXPLORE</a>
-					</div>
-				</div>
+			<div class="main-section-content ">
+				<h1>HI-TECH DESIGN</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quibusdam <br>rerum quo harum perspiciatis
+					recusandae.</p>
+				<a href="#">EXPLORE</a>
 			</div>
 		</div>
-	</section> -->
+	</section>
 
-<!-- 
-	// 	position: absolute
-	// 	top: 100%
-	// 	left: 0
-	// 	align-items: column
-	// 	width: 100%
-	// 	background: white
-	// 	li
-	// 		padding: 5px
-			
-	// 		line-height: 1
-	// 		z-index: 3
-	// 		a
-	// 			color: black
-	// 			padding: 5px
-	// 			line-height: 3
+	<section>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error esse eaque sed, nulla maiores perferendis, architecto laudantium impedit officiis minus exercitationem a assumenda nemo, labore accusamus doloremque mollitia. Necessitatibus facere saepe quam nobis mollitia ducimus aliquam voluptatibus illo error earum. Esse laborum beatae, ipsam quidem ad in corrupti autem aliquam neque earum, sit facilis quo tenetur. Deserunt nobis voluptate exercitationem saepe officiis nesciunt harum nam natus beatae optio debitis itaque eaque molestias dicta tempore, sequi dolorum, eum nisi recusandae qui placeat! Adipisci neque atque ut molestias magnam ex et quos deleniti, obcaecati cum mollitia porro ad at, asperiores nisi.</p>
+	</section>
 
 
 
-	// .header-conteiner
-	// 	background: white
-
-	// .header-img
-	// 	img:first-child
-	// 		display: none
-	// 	img:last-child
-	// 		display: block !important -->
 
 
 
-<!-- 
-	// * ul 
-	//     display: flex
-	//     justify-content: space-between
-	//     padding: 0
-	//     margin: 0
-	//     li
-	//         
-	//         // margin-left: 25px
-	//         cursor: pointer
-	//      
-	//             line-height: 95px
-	//             padding: 20px
-	//     li:last-child a
-	//         padding-right: 0
+
+	<script>
+
+		window.onscroll = function () { scrollFunction() };
 	
-	// // .container 
-	// //     width: 100%
-	// //     padding-right: 15px
-	// //     padding-left: 15px
-	// //     margin-right: auto
-	// //     margin-left: auto
-	//     // outline: 1px solid red
+		function scrollFunction() {
+		  if (document.body.scrollTop > 170 || document.documentElement.scrollTop > 170) {
+			document.getElementById("navbar").style.top = "0";
+			document.getElementById("leftNavBar").style.top = "0";
+		  } else {
+			document.getElementById("navbar").style.top = "-50px";
+			document.getElementById("leftNavBar").style.top = "-140px";
+		  }
+		}
 	
-	// header
-	//     .header-img
-	//         display: flex
-	//         justify-content: center
-	//         align-items: center
-	//         img
-	//             width: 85px
-	//         img:last-child
-	//             display: none
-	//     .header-conteiner
-	//   
-	//         background: red
-	//     .navbar
-	//         display: flex
-	//         justify-content: space-between
+	  </script>
 	
-	// .header-links-menu
-	//     display: none
-	//     text-transform: uppercase
-	//     text-decoration: none
-	//     font-size: 13px
-	//     font-weight: 600
-	//     color: #fff
-	//     line-height: 55px
-	//     padding: 20px
-	
-	// .section-first
-	//     background:url(../img/main/01.jpg) no-repeat
-	//     background-size: cover
-	//     height: 100%
-	//     width: 100%
-	//     background-position: center
-	
-	// .section-first
-	//     position: relative
-	//     &-container h1
-	//         font-size: 80px
-	//         font-weight: 700
-	//         color: #fff
-	//         line-height: 1.1
-	//         margin: 0 0 15px 0
-	//         font-family: Hind, sans-serif
-	//     p
-	//         color: #a6a7aa
-	//     a
-	//         margin-top: 15px
-	//         text-decoration: none
-	//         font-size: 13px
-	//         font-weight: 600
-	//         padding: 15px 30px
-	//         border: 1px solid rgba(255,255,255,.3)
-	//         color: white
-	//         display: inline-block
-	//         transition: .5s
-	//         &:hover
-	//             color: #515769
-	//             background: #fff
-	//             border-color: transparent
-	//             transition: .5s
-	
-	// .section-first-container
-	//     position: absolute
-	//     top: 30% -->
-	
-
-
-
-
-
-
 
 
 	<link rel="stylesheet" href="css/main.min.css">
