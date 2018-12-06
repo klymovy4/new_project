@@ -1,0 +1,57 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+.a
+    outline: 1px solid red
+
+.b
+    outline: 1px solid green
+
+header
+    position: fixed
+    width: 100%
+    border-bottom: 1px solid grey
+    background: red
+    // padding: 10px 0 0 0
+
+* ul
+    list-style-type: none
+    margin: 0
+    padding: 0
+
+.header-container
+
+.header-img
+    img
+        width: 85px
+        height: auto
+    img:last-child
+        display: none
+
+
+.header-links-menu-ul
+    li
+        padding: 34px 10px 34px
+        cursor: pointer
+        a
+            text-transform: uppercase
+            text-decoration: none
+            font-size: 13px
+            font-weight: 600
+            color: #fff
+    li:last-child
+        padding-right: 0
+
+.header-links-menu
+    display: none
+    padding: 34px 10px 34px
+    cursor: pointer
+    text-transform: uppercase
+    text-decoration: none
+    font-size: 13px
+    font-weight: 600
+    color: #fff
+    padding-right: 0
+@import "media" // Всегда в конце
