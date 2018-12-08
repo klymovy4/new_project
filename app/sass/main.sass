@@ -116,4 +116,49 @@ header
         li
             a
                 color: black
+
+.active
+    &:before
+        content: ''
+        position: absolute
+        top: 45px
+        left: 0
+        background: #17bed2
+        width: 9px
+        height: 2px
+
+.provide-products
+    padding: 100px 0 100px
+    &-content-item
+        padding: 50px
+
+.provide-products-items
+    cursor: pointer
+    i
+        display: block
+        font-size: 30px
+        color: #999caa
+        margin-bottom: 30px
+    h2
+        font-size: 22px
+    p
+        font-size: 15px
+        font-weight: 400
+        color: #a6a7aa
+
+
+.provide-products-content-item
+    transition: .1s
+    &:hover
+        transform: translateY(-35px)
+        transition: .2s
+        i
+            transform: translateY(-45px)
+            transition: .1s
+            visibility: hidden
+
+
+
+
+   
 @import "media" // Всегда в конце
