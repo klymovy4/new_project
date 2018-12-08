@@ -2,6 +2,7 @@
 @import "libs"
 @import "base"
 @import "vars"
+@import "owlCarousel"
 
 
 .a
@@ -13,11 +14,15 @@
 .c
     outline: 1px solid blue
 
+.container
+    overflow: hidden    
+
 header
     position: fixed
     width: 100%
     transition: /1s
     border-bottom: 1px solid grey
+    z-index: 20
 
 * ul
     list-style-type: none
@@ -28,6 +33,7 @@ header
 
 .header-img
     img
+        cursor: pointer
         width: 85px
         height: auto
     img:last-child
@@ -157,8 +163,83 @@ header
             transition: .1s
             visibility: hidden
 
+.latest-products
+    padding: 100px 0 100px
+    &-title
+        margin-bottom: 40px
+        padding-left: 0
+        h2
+            font-size: 30px
+            font-weight: 700
+            color: #515769
+            line-height: 1.4
+            margin: 0 0 15px
+        p
+            font-size: 15px
+            font-weight: 400
+            color: #a6a7aa
+            // margin-bottom: 15px
+    &-container-items
+        // overflow: hidden
+        // padding: 0
+        h3
+            font-size: 22px
+            font-weight: 700
+            color: #515769
+            line-height: 1.4
+            margin: 0 0 15px
+        img
+            width: 100%
+            display: block
+            max-width: 100%
+            height: 217.484px
+            margin-bottom: 20px
+            cursor: pointer
+            transition: transform .25s ease,-webkit-transform .25s ease
+            &:hover
+                transform: scale(1.1) translateY(-10px)
+                transition: transform .25s ease,-webkit-transform .25s ease
+        p
+            font-size: 15px
+            font-weight: 400
+            color: #a6a7aa
+            line-height: 1.2
+            display: inline
+            // margin-bottom: 15px
+            // display: inline-block
+        .read-more-less 
+            position: absolute
+            display: block
+            font-size: 13px
+            font-weight: 600
+            border: none
+            text-transform: uppercase
+            font-family: Hind, sans-serif
+            background: transparent
+            color: #999caa
+            padding: 10px 0 10px 0
+            margin-top: 10px
+            // outline: 1px solid red
+            cursor: pointer
+            outline: none
+            &:after
+                content: ''
+                position: absolute
+                top: 14px
+                right: -16px
+                background: #17bed2
+                width: 9px
+                height: 2px
+            &:hover
+                color: #a6a7aa
 
-
-
+.hide-text
+    display: none
+    p
+        line-height: 1.2
+        font-size: 15px
+        font-weight: 400
+        color: #a6a7aa
+    // position: absolute
    
 @import "media" // Всегда в конце

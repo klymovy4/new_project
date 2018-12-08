@@ -20,12 +20,73 @@ $(function () {
 
 	// 	if($(this).addClass('provide-products-content-item-hover'));
 	// 		else($(this).removeClass('provide-products-content-item-hover'));
-		
-		
+
+
 	// });
 
 	// $('.provide-products-content-item').click(function(){
-			// $(this).children().css("border", "2px solid red");
-			// alert(123);
+	// $(this).children().css("border", "2px solid red");
+	// alert(123);
 	// }); 
+
+
+	//-------------read more
+
+
+	$(".read-more-less").click(function () {
+		// $(this).siblings('.hide-text').slideToggle('slow');
+		var elem = $(this).text();
+		if (elem == "Read More") {
+			$(this).html("Read Less");
+			$(this).siblings('.hide-text').slideToggle();
+		} else {
+			$(this).text("Read More");
+			$(this).siblings('.hide-text').slideUp();
+		}
+		// alert(123);
+	});
+
+	//================================slide#=============================
+
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+	$('a[href^="#"]').click(function (e) {
+		e.preventDefault();
+
+		var target = this.hash;
+		var $target = $(target);
+
+		$('html, body').animate({
+			'scrollTop': $target.offset().top
+		}, 1000, 'swing');
+	});
+
+	//--------owl.carousel
+
+
+	$('.owl-carousel').owlCarousel({
+		autoplay:true,
+		autoplayTimeout:3000,
+		autoplayHoverPause:true,
+		// navText: ['<i class="fa fa-angle-double-left"></i>', '<i class="fa fa-angle-double-right"></i>'],
+		smartSpeed: 700,
+		loop: true,
+		// dots: false,
+		margin: 15,
+	
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 2
+			},
+			990:{
+			    items:3
+			}
+		}
+	});
 });
+
