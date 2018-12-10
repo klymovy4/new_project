@@ -135,6 +135,7 @@ header
 
 .provide-products
     padding: 100px 0 100px
+    background: #fafafa
     &-content-item
         padding: 50px
 
@@ -154,8 +155,10 @@ header
 
 
 .provide-products-content-item
+    background: #fff
+    border: 2px solid #fafafa
     transition: .1s
-    &:hover
+    &:hover .provide-box
         transform: translateY(-35px)
         transition: .2s
         i
@@ -208,7 +211,7 @@ header
             // margin-bottom: 15px
             // display: inline-block
         .read-more-less 
-            position: absolute
+            position: relative
             display: block
             font-size: 13px
             font-weight: 600
@@ -244,5 +247,14 @@ header
 
 .carousel-conteiner
     overflow: hidden
+
+.owl-carousel
+    img
+        width: 190px !important
+        display: block
+        height: auto
+        margin: 0 auto
+        opacity: 1
+        cursor: pointer
 
 @import "media" // Всегда в конце
