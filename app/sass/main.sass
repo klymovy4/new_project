@@ -15,7 +15,7 @@
     outline: 1px solid blue
 
 .container
-    overflow: hidden    
+    // overflow: hidden
 
 header
     position: fixed
@@ -66,6 +66,16 @@ header
             color: #fff
     li:last-child
         padding-right: 0
+    .active-li
+        &:before
+            content: ''
+            position: absolute
+            top: 45px
+            left: 0
+            background: #17bed2
+            width: 9px
+            height: 2px
+
 
 
 .header-links-menu
@@ -122,16 +132,6 @@ header
         li
             a
                 color: black
-
-.active
-    &:before
-        content: ''
-        position: absolute
-        top: 45px
-        left: 0
-        background: #17bed2
-        width: 9px
-        height: 2px
 
 .provide-products
     padding: 100px 0 100px
@@ -241,5 +241,8 @@ header
         font-weight: 400
         color: #a6a7aa
     // position: absolute
-   
+
+.carousel-conteiner
+    overflow: hidden
+
 @import "media" // Всегда в конце

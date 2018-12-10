@@ -84,7 +84,7 @@ $(function () {
 				items: 2
 			},
 			990:{
-			    items:3
+			    items: 3
 			}
 		}
 	});
