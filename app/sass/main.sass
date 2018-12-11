@@ -245,16 +245,99 @@ header
         color: #a6a7aa
     // position: absolute
 
-.carousel-conteiner
+.carousel-clients, .customer-reviews-content
     overflow: hidden
 
-.owl-carousel
-    img
-        width: 190px !important
-        display: block
-        height: auto
-        margin: 0 auto
-        opacity: 1
+.carousel
+    background: #fafafa
+    padding: 100px 0
+    .owl-carousel
+        img
+            width: 190px !important
+            height: auto
+            margin: 0 auto
+            opacity: 1
+            cursor: pointer
+
+.customer-reviews
+    padding: 100px 0
+    h2
+        font-size: 30px
+        font-weight: 700
+        color: #515769
+        line-height: 1.4
+        margin: 0 0 15px
+        font-family: Hind, sans-serif
+        position: relative
+    &-content
+        padding-left: 32px
+    &-content-items
+        padding-left: 32px   
+        p
+            color: #a6a7aa
+            span
+                color: #81848f
+                font-weight: 700
+                font-size: 14px
+            &:before
+                position: absolute
+                top: -20px
+                left: 0
+                font-size: 60px
+                display: inline-block
+                color: #17bed2
+                content: '“'
+
+.discount
+    padding: 100px 0
+    background: #fafafa
+    &-item
+        padding: 0
         cursor: pointer
+    &-items
+        border: 2px solid #fafafa
+        background: #fff
+        padding: 70px 45px
+        i
+            display: block
+            font-size: 30px
+            color: #999caa
+            margin-bottom: 30px
+        h2
+            font-size: 22px
+            font-weight: 700
+            color: #515769
+            line-height: 1.4
+            margin: 0 0 15px
+        p
+            font-size: 15px
+            font-weight: 400
+            color: #a6a7aa
+            margin-bottom: 15px
+        ul
+            margin-bottom: 50px    
+        li
+            position: relative
+            font-size: 13px
+            color: #81848f
+            padding-left: 20px
+            margin-bottom: 10px
+            &:before
+                content: ''
+                position: absolute
+                top: 9px
+                left: 0
+                background: #17bed2
+                width: 9px
+                height: 2px
+        .choose
+                font-size: 13px
+                font-weight: 600
+                padding: 15px 30px
+                color: #515769
+                background: #f3f4f5
+                border-color: transparent
+                border-width: 0
+                line-height: 1.4
 
 @import "media" // Всегда в конце

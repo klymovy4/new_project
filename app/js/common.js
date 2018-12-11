@@ -66,7 +66,7 @@ $(function () {
 	//--------owl.carousel
 
 
-	$('.owl-carousel').owlCarousel({
+	$('.carousel-clients .owl-carousel').owlCarousel({
 		autoplay:true,
 		autoplayTimeout:3000,
 		autoplayHoverPause:true,
@@ -84,9 +84,37 @@ $(function () {
 				items: 2
 			},
 			990:{
-			    items: 3
+			    items: 5
 			}
 		}
+	});
+
+	$('.customer-reviews-content .owl-carousel').owlCarousel({
+		// autoplay:true,
+		// autoplayTimeout:3000,
+		// autoplayHoverPause:true,
+		// navText: ['<i class="fa fa-angle-double-left"></i>', '<i class="fa fa-angle-double-right"></i>'],
+		smartSpeed: 700,
+		loop: true,
+		// dots: false,
+		margin: 35,
+	
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 1
+			},
+			990:{
+			    items: 1
+			}
+		}
+	});
+
+	$('.discount-item').click(function(){
+		// alert(123);
+		$(this).children('.discount-items').toggleClass().css('padding','150px 0');
 	});
 });
 
