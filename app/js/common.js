@@ -90,9 +90,9 @@ $(function () {
 	});
 
 	$('.customer-reviews-content .owl-carousel').owlCarousel({
-		// autoplay:true,
-		// autoplayTimeout:3000,
-		// autoplayHoverPause:true,
+		autoplay:true,
+		autoplayTimeout:7000,
+		autoplayHoverPause:true,
 		// navText: ['<i class="fa fa-angle-double-left"></i>', '<i class="fa fa-angle-double-right"></i>'],
 		smartSpeed: 700,
 		loop: true,
@@ -114,7 +114,9 @@ $(function () {
 
 	$('.discount-item').click(function(){
 		// alert(123);
-		$(this).children('.discount-items').toggleClass().css('padding','150px 0');
+		$(this).siblings('.discount-item').removeClass('selected-discount');
+		$(this).addClass('selected-discount');
+	
 	});
 });
 
