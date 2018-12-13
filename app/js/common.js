@@ -114,9 +114,9 @@ $(function () {
 
 	$('.discount-item').click(function(){
 		// alert(123);
-		$(this).siblings('.discount-item').removeClass('selected-discount');
-		$(this).addClass('selected-discount');
-	
+		
+		$(this).children().addClass('selected-discount');
+		$(this).siblings('.discount-item').children().removeClass('selected-discount');
 	});
 });
 
