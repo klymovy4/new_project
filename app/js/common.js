@@ -122,5 +122,10 @@ $(function () {
 	$(document).click(function(e){
 		$('.selected-discount').removeClass('selected-discount');
 	});
+
+
+	$('.asd').click(function(){
+		$('.header-links-menu').click();
+	})
 });
 
