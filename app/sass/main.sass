@@ -294,11 +294,15 @@ header
     background: #fafafa
     // background: lightblue
     z-index: 2
+    &-relative
+        position: relative
     &-item
         position: relative
         // display: flex
         // align-content: center
-        padding: 0
+        // padding: 0
+        background: #fff
+        border: 2px solid #fafafa
         cursor: pointer
     &-items
         // border: 2px solid #fafafa
@@ -356,8 +360,24 @@ header
     padding: 90px 45px
     position: absolute
     box-shadow: 0 0 18px 1px black
-    top: -20px
+    top: -7px
     left: -5px
     z-index: 2 !important
+
+.clients
+    position: relative
+    height: 400px
+    overflow: hidden
+    .promo-section-img-right
+        position: absolute
+        top: 0
+        // left: 50%
+        img
+            height: auto
+            min-width: 100%
+            // vertical-align: middle
+
+.clients-row
+    height: 100%
 
 @import "media" // Всегда в конце

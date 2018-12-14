@@ -112,11 +112,15 @@ $(function () {
 		}
 	});
 
-	$('.discount-item').click(function(){
-		// alert(123);
+	$('.discount-item').click(function(e){
+		e.stopPropagation();
 		
 		$(this).children().addClass('selected-discount');
 		$(this).siblings('.discount-item').children().removeClass('selected-discount');
+	});
+
+	$(document).click(function(e){
+		$('.selected-discount').removeClass('selected-discount');
 	});
 });
 

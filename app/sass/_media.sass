@@ -4,6 +4,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
+	.selected-discount
+		top: -20px
 	/**/
 
 
@@ -36,23 +38,38 @@
 	.latest-products-container
 		div:first-child
 			margin-bottom: 10px
+
+	.discount-items
+		padding: 25px 30px
+
+	.selected-discount
+		padding: 45px 45px
+    	position: absolute
+    	box-shadow: 0 0 18px 1px black
+    	top: -20px
+    	left: -5px
+    	z-index: 2 !important
+
 	/**/
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	.kostul
-		height: 409px
+		height: 399px
 
 	.discount-item
 		margin-bottom: 15px
 
 	.discount-items
-		padding: 40px 20px 20px 50px
+		// padding: 40px 20px 20px 50px
 		// text-align: center
 
 	.selected-discount
 		// position: relative
 	/**/
-
+@media only screen and (max-width : 575px)
+	.selected-discount
+		left: 0
+		top: -25px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
