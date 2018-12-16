@@ -29,8 +29,20 @@
 		background: #fff
 		li
 			padding: 15px 30px
+			position: relative
 			a
 				color: black
+
+		.active-li
+        	&:before
+            	content: ''
+            	position: absolute
+            	top: 28px
+            	left: 10px
+            	background: #17bed2
+            	height: 2px
+            	width: 9px
+
 	.header-img
 		img:first-child
 			display: none
