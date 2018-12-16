@@ -125,7 +125,19 @@ $(function () {
 
 
 	$('.asd').click(function(){
-		$('.header-links-menu').click();
-	})
+		if($(window).width() < 992){
+			$('.header-links-menu').click();
+		};
+	});
+	
+
+	$('.asd').click(function(){
+		$(this).addClass('active-li');
+		$(this).siblings().removeClass('active-li');
+	});
+	
+
+		// $('.header-links-menu').click();
+	
 });
 
