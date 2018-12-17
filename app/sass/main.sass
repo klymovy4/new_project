@@ -367,27 +367,24 @@ header
 .clients
     height: 400px
     overflow: hidden
-    .promo-section-img-right
-        // display: flex
-        //  width: 50%
-        // position: absolute
-        // top: 0
-        // left: 50%
-        // img
-            // height: auto
-            // width: 150hr
-            // display: block
-            // vertical-align: middle
+    position: relative
     .clients-row
-        img
-            // widows: 100%
-        // height: 100%
+        height: 100%
     h2
         font-size: 30px
         font-weight: 700
         color: #515769
         line-height: 1.4
         margin: 0 0 15px
+
+.clients-image
+        position: absolute
+        top: 0
+        left: 50%
+        img
+            display: block
+            max-width: 100%
+            height: auto
 
 .roof
     // width: 100%
@@ -492,7 +489,7 @@ header
         margin-right: 15px
 
 .modall
-    // display: none
+    display: none
     position: fixed
     z-index: 50
     // padding-top: 5%
