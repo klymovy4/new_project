@@ -136,7 +136,16 @@ $(function () {
 		$(this).siblings().removeClass('active-li');
 	});
 	
-	
+	$('.myImg').click(function(){
+		$('.modal-content').attr('src',this.src);
+		$('#caption').html(this.alt);
+		$('.modall').show();
+		
+	});
+	$('.modall').click(function(){
+		$('.modal-content').hide();
+		$('.modall').hide();
+	})
 
 		// $('.header-links-menu').click();
 	
