@@ -352,16 +352,16 @@
 				<div class="col-md-6">
 					<div class="row">
 						<div class="col-md-4">
-							<div class="footer-ul a">
+							<div class="footer-ul">
 								<ul>
-									<li><a href="">Home</a></li>
-									<li><a href="">About</a></li>
-									<li><a href="">Products</a></li>
-									<li><a href="">Pricing</a></li>
-									<li><a href="">Clients</a></li>
-									<li><a href="">Careers</a></li>
-									<li><a href="">Contact</a></li>
-									<li><a href="">Terms</a></li>
+									<li><a href="#header">Home</a></li>
+									<li><a href="#">About</a></li>
+									<li><a href="#">Products</a></li>
+									<li><a href="#pricing">Pricing</a></li>
+									<li><a href="#">Clients</a></li>
+									<li><a href="#">Careers</a></li>
+									<li><a href="#">Contact</a></li>
+									<!-- <li><a href="#">Terms</a></li> -->
 								</ul>
 							</div>
 						</div>
@@ -380,11 +380,12 @@
 				<div id='faq' class="col-md-6 review">
 					<h2>Send Us A Note</h2>
 					<p>If you want to leave a review, write it, and I will read!</p>
-					<form action="https://docs.google.com/forms/d/e/1FAIpQLSd2ZEo7Z3PjABRJX_DCiUVJZuCSVV2Z-E1Zlc08kkzH4JnKeQ/formResponse" target="_self" method="POST" id="mG61Hd" class='form'>
-						<input type="text" name='entry.419817072' class="footer-input" placeholder="Name">
-						<input type="email" name='entry.1167364691' class="footer-input margin-b-20" placeholder="Email">
-						<input type="text" name='entry.302984638' class="footer-input margin-b-20" placeholder="Phone">
-						<textarea type="text" name='entry.362843095' class="footer-textarea margin-b-20" rows="6" placeholder="Message"></textarea>
+					<form action="https://docs.google.com/forms/d/e/1FAIpQLSdslx8TdDc6XkmBJT-UbbZYuuV68Xn8OVwd9_Fe02y1Yb3G6A/formResponse"
+					 target="_self" method="POST" id="mG61Hd" class='form'>
+						<input type="text" name='entry.1487915639' class="footer-input" placeholder="Name" required>
+						<input type="email" name='entry.1203443200' class="footer-input margin-b-20" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+						<input type="phone" name='entry.321897156' class="footer-input margin-b-20" placeholder="Phone" required pattern="[0-9]{10}">
+						<textarea type="text" name='entry.2083559067' class="footer-textarea margin-b-20" rows="6" placeholder="Message" required ></textarea>
 						<button class='btn-theme ' type='submit'>SUBMIT</button>
 					</form>
 				</div>
