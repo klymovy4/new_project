@@ -7,15 +7,16 @@
 
 	<title>summury-sass</title>
 	<meta name="description" content="">
-	<!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-	 crossorigin="anonymous"> -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	 crossorigin="anonymous">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	 crossorigin="anonymous">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-	<!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
 	<style>
 		body {
@@ -47,10 +48,10 @@
 					<ul class='header-links-menu-ul'>
 						<li class='asd active-li'><a href="#header">Home</a></li>
 						<li class='asd'><a href="#pricing">Pricing</a></li>
-						<li class='asd '><a href="#">About</a></li>
+						<li class='asd '><a href="#showcase">About</a></li>
 						<li class='asd'><a href="#products">Products</a></li>
-						<li class='asd'><a href="#faq">FAQ</a></li>
-						<li class='asd'><a href="#footer">Contact</a></li>
+						<li class='asd'><a href="#footer">FAQ  & contacts</a></li>
+						<li class='asd'><a href="#">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -147,7 +148,7 @@
 
 		<div class="container">
 			<div class="latest-products-container row">
-				<div class="latest-products-container-items col-md-4 col-sm-12">
+				<div class="latest-products-container-items latest-products-container-items-slideInLeft col-md-4 col-sm-12">
 					<img class='myImg' src="https://images.pexels.com/photos/1323445/pexels-photo-1323445.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
 					 alt="photo">
 					<h3>Triangle Roof</h3>
@@ -173,7 +174,7 @@
 					<button class='read-more-less'>Read More</button>
 				</div>
 
-				<div class="latest-products-container-items col-md-4 col-sm-6">
+				<div class="latest-products-container-items latest-products-container-items-slideInRight col-md-4 col-sm-6">
 					<img class='myImg' src="https://images.pexels.com/photos/934347/pexels-photo-934347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
 					 alt="photo">
 					<h3>Bird On Green</h3>
@@ -238,7 +239,7 @@
 					<!-- <div class="discount-item"> -->
 					<div class="discount-items">
 						<i class="fas fa-atom"></i>
-						<h2>Starter Kit <span> $ </span>49</h2>
+						<h3>Starter Kit <span> $ </span>49</h3>
 						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, neque.</p>
 						<ul>
 							<li>Beasic Features</li>
@@ -254,7 +255,7 @@
 					<!-- <div class="discount-item"> -->
 					<div class="discount-items">
 						<i class="fas fa-medal"></i>
-						<h2>Starter Kit <span> $ </span>49</h2>
+						<h3>Starter Kit <span> $ </span>49</h3>
 						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, neque.</p>
 						<ul>
 							<li>Beasic Features</li>
@@ -270,7 +271,7 @@
 					<!-- <div class=""> -->
 					<div class="discount-items">
 						<i class="fas fa-shield-alt"></i>
-						<h2>Starter Kit <span> $ </span>49</h2>
+						<h3>Starter Kit <span> $ </span>49</h3>
 						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, neque.</p>
 						<ul>
 							<li>Beasic Features</li>
@@ -321,7 +322,7 @@
 	</section>
 
 
-	<section class='showcase'>
+	<section id='showcase' class='showcase'>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-sm-6 showcase-text">
@@ -377,9 +378,9 @@
 					</div>
 				</div>
 
-				<div id='faq' class="col-md-6 review">
-					<h2>Send Us A Note</h2>
-					<p>If you want to leave a review, write it, and I will read!</p>
+				<div id='faq' class="col-md-6">
+					<h3 class='h2-slideInRight'>Send Us A Note</h3>
+					<p class='h2-slideInRight-p'>If you want to leave a review, write it, and I will read!</p>
 					<form action="https://docs.google.com/forms/d/e/1FAIpQLSdslx8TdDc6XkmBJT-UbbZYuuV68Xn8OVwd9_Fe02y1Yb3G6A/formResponse"
 					 target="_self" method="POST" id="mG61Hd" class='form'>
 						<input type="text" name='entry.1487915639' class="footer-input" placeholder="Name" required>
@@ -406,6 +407,19 @@
 		</div>
 	</section>
 
+
+
+
+
+	<!-- <section class="s-1">
+		<img class='i' src="https://images.pexels.com/photos/42224/accord-acoustic-art-background-42224.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="1">
+
+	</section> -->
+
+
+
+	
+	
 	<div id='myModal' class="modall">
 		<span class="close">&times;</span>
 		<img class="modal-content" src="">
@@ -416,14 +430,17 @@
 
 
 	<link rel="stylesheet" href="css/main.min.css">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	 crossorigin="anonymous"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script> -->
+	 <!-- <script src="libs/jquery/jquery-1.11.2.min.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
 	 crossorigin="anonymous"></script>
+	<!-- <script src="libs/waypoints/waypoints.min.js"></script> -->
+	<!-- <script src="js/animate-css.js"></script> -->
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 	 crossorigin="anonymous"></script>
 	<script src="js/scripts.min.js"></script>
-
+	<!-- <script src='js/common.js'></script> -->
 </body>
 
 </html>
