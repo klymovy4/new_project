@@ -25,9 +25,12 @@ gulp.task('browser-sync', function() {
 gulp.task('js', function() {
 	return gulp.src([
 		// 'app/libs/jquery/dist/jquery.min.js',
+		
 		'app/libs/jquery/jquery/jquery-1.11.2.min.js',
 		'app/libs/owl.carousel.min.js',
 		'app/libs/waypoints/waypoints.min.js',
+		// 'js/scripts.min.js',
+		'app/libs/jquery.mask.min.js',
 		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

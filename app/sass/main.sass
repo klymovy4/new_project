@@ -4,14 +4,44 @@
 @import "vars"
 @import "owlCarousel"
 
-// body input:focus:required:invalid,
-// body textarea:focus:required:invalid {
-	
-// }
-// body input:required:valid,
-// body textarea:required:valid {
-	
-// }
+body input:focus:required:invalid,
+body textarea:focus:required:invalid 
+	border: 1px solid red
+    outline: none
+    background: transparent
+
+body input:required:valid,
+body textarea:required:valid 
+	outline: 1px solid green
+    background: transparent
+
+
+.loader 
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+
+.loader_inner 
+	background-image: url("../img/preloader.gif")
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	background-color: #fff
+	height: 60px
+	width: 60px
+	margin-top: -30px
+	margin-left: -30px
+	left: 50%
+	top: 50%
+	position: absolute
+
+
 .a
     outline: 1px solid red
 
@@ -200,6 +230,7 @@ header
             margin: 0 0 15px
         img
             width: 100%
+            box-shadow: -2px 1px 16px 0 #000
             display: block
             max-width: 100%
             height: 217.484px
@@ -349,17 +380,18 @@ header
                 width: 9px
                 height: 2px
         .choose
-                font-size: 13px
-                font-weight: 600
-                padding: 15px 30px
-                color: #515769
-                background: #f3f4f5
-                border-color: transparent
-                border-width: 0
-                line-height: 1.4
-                &:hover
-                    background: #000
-                    color: #fff
+            font-size: 13px
+            font-weight: 600
+            padding: 15px 30px
+            color: #515769
+            background: #f3f4f5
+            border-color: transparent
+            border-width: 0
+            line-height: 1.4
+            outline: none
+            &:hover
+                background: #000
+                color: #fff
 
 .selected-discount
     // display: flex
@@ -438,6 +470,8 @@ header
         grid-template-columns: repeat(3, 1fr)
         img
             width: 100%
+            box-shadow: -2px 1px 16px 0px #000
+            z-index: 39px !important
         img:nth-child(1)
             width: 100%
             grid-column: 1/3
@@ -456,6 +490,7 @@ header
     background-size: cover
     paddong: 100px 0
     padding: 100px 0 0 0
+    z-index: 40px !important
     &-row
         padding-bottom: 100px
         .h2-slideInRight
@@ -487,12 +522,14 @@ header
         margin-bottom: 20px
         height: 50px
         padding-left: 15px
+        outline: none
     .footer-textarea
         background: rgba(0,0,0,.15)
         border: none
         margin-bottom: 20px
         padding-left: 15px
         width: 100%
+        outline: none
     .form
         input[type='text'],input[type='phone'],textarea[type='text'],input[type='email']
             color: white
@@ -506,6 +543,7 @@ header
             font-family: Hind, sans-serif
             font-weight: 600
             font-size: 13px
+            cursor: pointer
 
 .deep-footer
     border-top: 1px solid grey
@@ -539,7 +577,7 @@ header
     .modal-content
         display: block !important
         margin: 2% auto 0
-        padding: 20px
+        padding: 10px
         height: 90%
         width: auto
         animation-name: modalopen

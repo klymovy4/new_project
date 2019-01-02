@@ -1,3 +1,12 @@
+$(window).load(function () {
+
+	$(".loader_inner").fadeOut();
+	$(".loader").delay(400).fadeOut("slow");
+
+});
+
+
+
 $(function () {
 
 	$('.header-links-menu').click(function () {
@@ -150,7 +159,7 @@ $(function () {
 	// $('.header-links-menu').click();
 
 
-	//animate-------------------------------------
+//animate-------------------------------------
 
 
 	$.fn.animated = function (inEffect, outEffect) {
@@ -175,13 +184,23 @@ $(function () {
 
 	$("* h2").animated("slideInLeft", "slideOutDown");
 	// $(".latest-products-container-items-slideInLeft img").animated("slideInLeft","");
-	$(".h2-slideInRight").animated("bounceInRight","slideOutDown");
-	$(".h2-slideInRight-p").animated("slideInRight","slideOutDown");
-	$(".showcase-images:nth-child(1)").animated("bounceInUp","slideOutDown");
-	$(".showcase-images:nth-child(2)").animated("bounceInRight","slideOutDown");
-	$(".showcase-images:nth-child(3)").animated("bounceInLeft","slideOutDown");
-	$(".showcase-images:nth-child(4)").animated("bounceInDown","slideOutDown");
-	$(".showcase-images:nth-child(5)").animated("bounceInRight","slideOutDown");
-	// $(".latest-products-container-items-slideInRight").animated("slideInRight", "slideOutDown");
+	$(".h2-slideInRight").animated("bounceInRight", "slideOutDown");
+	$(".h2-slideInRight-p").animated("slideInRight", "slideOutDown");
+	$(".showcase-images:nth-child(1)").animated("bounceInUp", "slideOutDown");
+	$(".showcase-images:nth-child(2)").animated("bounceInRight", "slideOutDown");
+	$(".showcase-images:nth-child(3)").animated("bounceInLeft", "slideOutDown");
+	$(".showcase-images:nth-child(4)").animated("bounceInDown", "slideOutDown");
+	$(".showcase-images:nth-child(5)").animated("bounceInRight", "slideOutDown");
+	// $(".clients-image img").animated("bounceInRight", "");
 	// $("* img").animated("slideInLeft", "slideOutDown");
+
+//-----------------------------------------------------------
+
+
+	$('input[type="phone"]').mask('+3 80(99) 99 99 999');
 });
+
+// jQuery(function($){
+// 	$('input[type="phone"]').mask('+3 80(99) 99 99 999');
+// });
+
