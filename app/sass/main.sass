@@ -166,11 +166,15 @@ header
             a
                 color: black
 
+
+
+
 .provide-products
     padding: 100px 0 100px
     background: #fafafa
+
     &-content-item
-        padding: 50px
+        // padding: 50px
 
 .provide-products-items
     cursor: pointer
@@ -179,25 +183,21 @@ header
         font-size: 30px
         color: #999caa
         margin-bottom: 30px
-    h2
-        font-size: 22px
-    p
-        font-size: 15px
-        font-weight: 400
-        color: #a6a7aa
+        transition: .1s
+    
 
 
 .provide-products-content-item
-    background: #fff
-    border: 2px solid #fafafa
+
+    cursor: pointer
     transition: .1s
-    &:hover .provide-box
+    &:hover .provide-products-items
         transform: translateY(-35px)
-        transition: .2s
+        transition: .1s
         i
-            transform: translateY(-45px)
-            transition: .1s
             visibility: hidden
+            transition: .1s
+       
 
 .latest-products
     padding: 100px 0 100px
@@ -237,8 +237,9 @@ header
             font-size: 15px
             font-weight: 400
             color: #a6a7aa
+            margin-bottom: 0
             line-height: 1.2
-            display: inline
+            // display: inline
         .read-more-less 
             position: relative
             display: block
@@ -267,7 +268,7 @@ header
 .hide-text
     display: none
     font-size: 15px
-    font-weight: 400
+    // font-weight: 400
     color: #a6a7aa
 
 .carousel-clients, .customer-reviews-content
@@ -450,7 +451,7 @@ header
         img
             width: 100%
             box-shadow: -2px 1px 16px 0px #000
-            z-index: 39px !important
+            // z-index: 39px !important
         img:nth-child(1)
             width: 100%
             grid-column: 1/3
@@ -467,7 +468,7 @@ header
 .footer
     background: url(../img/03.jpg) center center no-repeat
     background-size: cover
-    paddong: 100px 0
+    // paddong: 100px 0
     padding: 100px 0 0 0
     z-index: 40px !important
     &-row
@@ -553,10 +554,11 @@ header
     overflow: auto
     background-color: rgba(0,0,0,0.8)
     .modal-content
+        
         display: block !important
         margin: 2% auto 0
         padding: 10px
-        height: 90%
+        height: 80%
         width: auto
         animation-name: modalopen
         animation-duration: 1s
@@ -566,4 +568,15 @@ header
         margin: auto
         text-align: center
 
+.test
+    img
+        cursor: pointer
+        width: 100%
+        // height: 100%
+    &-col
+        // height: 100%
+        padding: 0
+
+.mt--2
+    margin-top: -9%
 @import "media" // Всегда в конце

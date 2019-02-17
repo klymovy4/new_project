@@ -38,7 +38,9 @@ $(function () {
 	// alert(123);
 	// }); 
 
-
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	  })
 	//-------------read more
 
 
@@ -47,12 +49,12 @@ $(function () {
 		var elem = $(this).text();
 		if (elem == "Read More") {
 			$(this).html("Read Less");
-			$(this).siblings('.hide-text').slideToggle();
+			$(this).siblings('.hide-text').slideDown();
 		} else {
 			$(this).text("Read More");
 			$(this).siblings('.hide-text').slideUp();
 		}
-		// alert(123);
+	
 	});
 
 	//================================slide#=============================
@@ -100,7 +102,7 @@ $(function () {
 
 	$('.customer-reviews-content .owl-carousel').owlCarousel({
 		autoplay: true,
-		autoplayTimeout: 7000,
+		autoplayTimeout: 5000,
 		autoplayHoverPause: true,
 		// navText: ['<i class="fa fa-angle-double-left"></i>', '<i class="fa fa-angle-double-right"></i>'],
 		smartSpeed: 700,
@@ -159,7 +161,7 @@ $(function () {
 	// $('.header-links-menu').click();
 
 
-//animate-------------------------------------
+	//animate-------------------------------------
 
 
 	$.fn.animated = function (inEffect, outEffect) {
@@ -170,7 +172,7 @@ $(function () {
 				$(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1");
 			};
 		}, {
-				offset: "83%"
+				offset: "90%"
 			}).waypoint(function (dir) {
 				if (dir === "down") {
 					$(this).removeClass(inEffect).addClass(outEffect).css("opacity", "1");
@@ -182,6 +184,31 @@ $(function () {
 				});
 	};
 
+	//     another animation-----------------------------------------------------------------
+
+
+	$(window).scroll(function () {
+		$(' .mov').each(function () {
+			var imagePos = $(this).offset().top;
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow + 750) {
+				$(this).addClass('swing');
+			}
+		});
+		$(' .mov1').each(function () {
+			var imagePos = $(this).offset().top;
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow + 950) {
+				$(this).addClass('bounceInRight');
+			}
+		});
+	});
+
+
+	//     another animation-----------------------------------------------------------------
+
+
+
 	$("* h2").animated("slideInLeft", "slideOutDown");
 	// $(".latest-products-container-items-slideInLeft img").animated("slideInLeft","");
 	$(".h2-slideInRight").animated("bounceInRight", "slideOutDown");
@@ -191,10 +218,11 @@ $(function () {
 	$(".showcase-images:nth-child(3)").animated("bounceInLeft", "slideOutDown");
 	$(".showcase-images:nth-child(4)").animated("bounceInDown", "slideOutDown");
 	$(".showcase-images:nth-child(5)").animated("bounceInRight", "slideOutDown");
-	// $(".clients-image img").animated("bounceInRight", "");
+	$(".provide-products-content-item:nth-child(6)").animated("bounceInRight", "");
 	// $("* img").animated("slideInLeft", "slideOutDown");
-
-//-----------------------------------------------------------
+	$(".test-img-3").animated("bounceInLeft", "slideOutDown");
+	$(".test-img-1").animated("bounceInUp", "slideOutDown");
+	//-----------------------------------------------------------
 
 
 	$('input[type="phone"]').mask('+3 80(99) 99 99 999');
